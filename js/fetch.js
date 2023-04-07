@@ -9,11 +9,11 @@ function isiTableBap(results) {
 }
 function isiRow(value) {
     let content = 
-    isiTabel.replace("#JUDUL#", value.biodata.judul)
-            .replace("#NAMAMAHASISWA#", value.biodata.nama_mahasiswa)
-            .replace("#PRODI#", value.biodata.prosi)
+    isiTabel.replace("#JUDUL#", value.judul)
+            .replace("#NAMAMAHASISWA#", value.nama_mahasiswa)
+            .replace("#PRODI#", value.prosi)
             .replace("#HASILREVISI#", value.hasil_revisi)
-            .replace("#DOSEN#", value.biodata.dosen)
+            .replace("#DOSEN#", value.dosen)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
         addInner("iniTabel", content);
