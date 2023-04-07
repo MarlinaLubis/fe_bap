@@ -4,7 +4,7 @@ import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/
 import { isiTabel } from "./table.js";
 let urlAPI = "https://marlinapp.herokuapp.com/bap";
 get(urlAPI, isiTableBap);
-export function isiTableBap(results) {
+function isiTableBap(results) {
   results.forEach(isiRow);
 }
 
