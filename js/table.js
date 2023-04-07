@@ -15,10 +15,10 @@ export let isiTabel =
             // </div>
         </div>
     </th>
-    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#JUDUL#</th>
-    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#NAMAHASISWA#</th>
-    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#PRODI#</th>
-    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-center">#HASILREVISI#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-left">#JUDUL#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-left">#NAMAHASISWA#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-left">#PRODI#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-center">#HASILREVISI#</th>
     <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-left">#DOSEN#</th>
     <th class="whitespace-nowrap px-4 bg-white text-left">
         // <div class="w-auto p-2">
