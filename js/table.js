@@ -10,7 +10,7 @@ export let isiTabel =
                 <div class="flex items-center justify-center w-10 h-10 text-base font-medium text-#WARNALOGO#-600 bg-#WARNALOGO#-200 rounded-md">ULBI</div>
             </div>
             <div class="w-auto p-2">
-                <p class="text-xs font-semibold text-coolGray-800">#JDUL#</p>
+                <p class="text-xs font-semibold text-coolGray-800">#JUDUL#</p>
                 <p class="text-xs font-medium text-coolGray-500">#NAMAMAHASISWA#</p>
             </div>
         </div>
