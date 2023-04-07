@@ -3,8 +3,8 @@ import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTabel } from "./table.js";
 let urlAPI = "https://marlinapp.herokuapp.com/bap";
-get(urlAPI, isiTableProfile);
-function isiTableProfile(results) {
+get(urlAPI, isiTableBap);
+function isiTableBap(results) {
   results.forEach(isiRow);
 }
 
