@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Dashboard</title>
+  <title>Bap</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,171 +13,105 @@
   <script type="module" src="../js/fetch.js"></script>
 
 </head>
+<aside class="flex flex-col w-64 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
+  <a href="#" class="mx-auto">
+      <img class="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt="">
+  </a>
 
-  <!-- component -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-<div id="wrapper" class="flex h-screen bg-grey-lightest sm:flex-col md:flex-row font-light w-full">
-        <div id="sidebar" class="bg-orange-darker md:w-64 overflow-y-scroll sm:w-screen">
-            <header class="flex justify-between items-center border-b border-orange-darkest pt-8 pb-8 pl-6 pr-6">
-                <div id="logo">
-                    <a href="#" class="no-underline text-white md:text-2xl sm:text-4xl font-bold">
-                        <img src="#" width="120" alt="">
-                        Data Bap
-                    </a>
-                </div>
-                <div id="collapse" class="text-white border border-white p-2 h-8 rounded">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
-            </header>
-            <div id="profile" class="flex items-center border-b border-orange-darkest px-8 py-6">
-                <div id="img" class="w-1/4">
-                    <img src="https://scontent.fscl14-1.fna.fbcdn.net/v/t1.0-1/p80x80/17353312_10211368131493981_4314191449503901504_n.jpg?oh=829362e45b722e771e7a7200c9191a5e&oe=5AC839A5" width="55" alt="" class="rounded-full">
-                </div>
-                <div id="welcome" class="text-white w-2/4 sm:ml-1 md:ml-4">
-                    <p class="text-xs">Welcome,</p>
-                    <span class="text-lg">Fabian Olivares</span>
-                </div>
-            </div>
-            <ul id="menu" class="flex flex-col list-reset sm:hidden md:block">
-                <li class="block">
-                    <a href="#" class="no-underline text-white block h-full w-full border-b border-orange-darkest px-8 py-4 hover:text-orange">
-                        <i class="fa fa-tachometer mr-2" aria-hidden="true"></i>
-                        Dashboard
-                    </a>
-                </li>
-                <li class="flex justify-between block">
-                    <a href="#" class="no-underline text-white block h-full w-full border-b border-orange-darkest px-8 py-4 hover:text-orange">
-                        <i class="fa fa-user mr-2" aria-hidden="true"></i>
-                        Account
-                        <i class="fa fa-angle-right float-right" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="block">
-                    <a href="#" class="no-underline text-white block h-full w-full border-b border-orange-darkest px-8 py-4 hover:text-orange">
-                        <i class="fa fa-envelope mr-2" aria-hidden="true"></i>
-                        MailBox
-                        <i class="fa fa-angle-down float-right" aria-hidden="true"></i>
-                    </a>
-                    <ul class="flex flex-col list-reset bg-orange-darkest block">
-                        <li class="flex block border-b border-orange-darker">
-                            <a href="#" class="no-underline text-white block h-full w-full ml-4 hover:text-orange px-8 py-4">
-                                <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-                                Inbox
-                            </a>
-                        </li>
-                        <li class="flex block border-b border-orange-darker">
-                            <a href="#" class="no-underline text-white block h-full w-full ml-4 hover:text-orange px-8 py-4">
-                                <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-                                Categories
-                                <i class="fa fa-angle-down float-right" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <ul class="flex flex-col list-reset bg-orange-darkest block">
-                            <li class="flex block border-b border-orange-darker">
-                                <a href="#" class="no-underline text-white block h-full w-full ml-8 hover:text-orange px-8 py-4">
-                                    <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-                                    Social
-                                </a>
-                            </li>
-                            <li class="flex block border-b border-orange-darker">
-                                <a href="#" class="no-underline text-white block h-full w-full ml-8 hover:text-orange px-8 py-4">
-                                    <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-                                    Notifications
-                                </a>
-                            </li>
-                        </ul>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div id="content" class="px-8 bg-transparent flex-grow flex-shrink flex-auto overflow-y-scroll">
-            <div id="info" class="border-b border-grey-light h-24">
-                <div class="flex justify-between flex-grow items-center border-b h-24">
-                    <div class="flex">
-                        <ul class="flex list-reset text-black">
-                            <li class="py-4 px-4">
-                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                            </li>
-                            <li class="py-4 px-4">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </li>
-                            <li class="flex items-center w-8 h-8 ml-8">
-                                <a href="#" class="relative no-underline text-black">
-                                    <i class="fa fa-list absolute pin-t pin-r" aria-hidden="true"></i>
-                                    <span class="absolute rounded-full h-4 w-4 bg-orange text-xs text-center leading-tight text-white pin-b pin-l">2</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex">
-                        <ul class="flex list-reset text-black">
-                            <li class="px-4">
-                                <span class="text-sm">
-                                    <i class="fa fa-comments" aria-hidden="true"></i>
-                                    Chat
-                                </span>
-                            </li>
-                            <li class="border-l px-4">
-                                <span class="text-sm">
-                                    Log Out
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="flex flex-col items-center mt-6 -mx-2">
+      <img class="object-cover w-24 h-24 mx-2 rounded-full" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="avatar">
+      <h4 class="mx-2 mt-2 font-medium text-gray-800 dark:text-gray-200">Marlina</h4>
+      <p class="mx-2 mt-1 text-sm font-medium text-gray-600 dark:text-gray-400">marlina@gmail.com</p>
+  </div>
 
-    <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap items-center justify-between -m-2 mb-4">
-        <div class="w-full md:w-1/2 p-2">
-          <p class="font-semibold text-xl text-coolGray-800">Tabel Data Bap</p>
-          <p class="font-medium text-sm text-coolGray-500">20 Data</p>
-        </div>
-        <div class="w-full md:w-1/2 p-2">
-          <div class="relative md:max-w-max md:ml-auto">
-            <svg class="absolute left-3 transform top-1/2 -translate-y-1/2" width="16" height="16"
-              viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M14.0467 11.22L12.6667 9.80667C12.3699 9.5245 11.9955 9.33754 11.5916 9.26983C11.1876 9.20211 10.7727 9.25673 10.4001 9.42667L9.80008 8.82667C10.5071 7.88194 10.83 6.70445 10.7038 5.53122C10.5775 4.358 10.0115 3.27615 9.1197 2.50347C8.22787 1.73078 7.07643 1.32464 5.89718 1.36679C4.71794 1.40894 3.59844 1.89626 2.76405 2.73065C1.92967 3.56503 1.44235 4.68453 1.4002 5.86378C1.35805 7.04302 1.76419 8.19446 2.53687 9.08629C3.30956 9.97812 4.3914 10.5441 5.56463 10.6704C6.73786 10.7966 7.91535 10.4737 8.86007 9.76667L9.45341 10.36C9.26347 10.7331 9.1954 11.1564 9.25879 11.5702C9.32218 11.984 9.51383 12.3675 9.80674 12.6667L11.2201 14.08C11.5951 14.4545 12.1034 14.6649 12.6334 14.6649C13.1634 14.6649 13.6717 14.4545 14.0467 14.08C14.2372 13.8937 14.3886 13.6713 14.4919 13.4257C14.5953 13.1802 14.6485 12.9164 14.6485 12.65C14.6485 12.3836 14.5953 12.1198 14.4919 11.8743C14.3886 11.6287 14.2372 11.4063 14.0467 11.22ZM8.39341 8.39333C7.9269 8.85866 7.33294 9.1753 6.68657 9.30323C6.0402 9.43117 5.37041 9.36466 4.76181 9.11212C4.15321 8.85958 3.63312 8.43234 3.26722 7.88436C2.90132 7.33638 2.70603 6.69224 2.70603 6.03333C2.70603 5.37442 2.90132 4.73029 3.26722 4.18231C3.63312 3.63433 4.15321 3.20708 4.76181 2.95454C5.37041 2.702 6.0402 2.6355 6.68657 2.76343C7.33294 2.89137 7.9269 3.208 8.39341 3.67333C8.70383 3.98297 8.95012 4.35081 9.11816 4.75577C9.2862 5.16074 9.3727 5.59488 9.3727 6.03333C9.3727 6.47178 9.2862 6.90592 9.11816 7.31089C8.95012 7.71586 8.70383 8.08369 8.39341 8.39333ZM13.1067 13.1067C13.0448 13.1692 12.971 13.2187 12.8898 13.2526C12.8086 13.2864 12.7214 13.3039 12.6334 13.3039C12.5454 13.3039 12.4583 13.2864 12.377 13.2526C12.2958 13.2187 12.2221 13.1692 12.1601 13.1067L10.7467 11.6933C10.6843 11.6314 10.6347 11.5576 10.6008 11.4764C10.567 11.3951 10.5495 11.308 10.5495 11.22C10.5495 11.132 10.567 11.0449 10.6008 10.9636C10.6347 10.8824 10.6843 10.8086 10.7467 10.7467C10.8087 10.6842 10.8825 10.6346 10.9637 10.6007C11.0449 10.5669 11.1321 10.5495 11.2201 10.5495C11.3081 10.5495 11.3952 10.5669 11.4765 10.6007C11.5577 10.6346 11.6314 10.6842 11.6934 10.7467L13.1067 12.16C13.1692 12.222 13.2188 12.2957 13.2527 12.3769C13.2865 12.4582 13.3039 12.5453 13.3039 12.6333C13.3039 12.7213 13.2865 12.8085 13.2527 12.8897C13.2188 12.971 13.1692 13.0447 13.1067 13.1067Z"
-                fill="#BBC3CF"></path>
-            </svg>
-            <input
-              class="w-full md:w-64 pl-8 pr-4 py-2 text-sm text-coolGray-400 font-medium outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
-              type="text" placeholder="Search">
-          </div>
-        </div>
+  <div class="flex flex-col justify-between flex-1 mt-6">
+      <nav>
+          <a class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-800 dark:text-gray-200" href="#">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <span class="mx-4 font-medium">Dashboard</span>
+          </a>
+
+          <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <span class="mx-4 font-medium">Accounts</span>
+          </a>
+
+          <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <span class="mx-4 font-medium">Tickets</span>
+          </a>
+
+          <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <span class="mx-4 font-medium">Settings</span>
+          </a>
+      </nav>
+  </div>
+  <div class="container px-4 mx-auto">
+    <div class="flex flex-wrap items-center justify-between -m-2 mb-4">
+      <div class="w-full md:w-1/2 p-2">
+        <p class="font-semibold text-xl text-coolGray-800">Tabel Data Bap</p>
+        <p class="font-medium text-sm text-coolGray-500">20 Data</p>
       </div>
-      <div class="mb-6 border border-coolGray-100"></div>
-      <div class="overflow-hidden border border-coolGray-100 rounded-md shadow-dashboard">
-        <div class="overflow-x-auto">
-          <table class="w-full" id="iniTabel">
-            <tr class="whitespace-nowrap h-11 bg-coolGray-50 bg-opacity-80 border-b border-coolGray-100">
-              <th class="px-4 font-semibold text-xs text-coolGray-500 uppercase text-left">
-                <div class="flex items-center">
-                  <input class="mr-3 w-4 h-4 bg-white rounded" type="checkbox">
-                  <p>Judul</p>
-                </div>
-              </th>
-              <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-left">
-                Nama Mahasiswa</th>
-              <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-center">
-                Prodi</th>
-              <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-center">
-                Hasil Revisi</th>
-              <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-center">
-                Dosen</th>
-              <th class="whitespace-nowrap font-semibold text-xs text-coolGray-500 uppercase text-center">
-              </th>
-            </tr>
-          
-            <!-- ISI TABEL DARI SINI (BUAT pada FILE tabel.js) -->
-          
-            <!-- ISI TABEL SAMPAI DISINI (BUAT pada FILE tabel.js) -->
-
-          </table>
+      <div class="w-full md:w-1/2 p-2">
+        <div class="relative md:max-w-max md:ml-auto">
+          <svg class="absolute left-3 transform top-1/2 -translate-y-1/2" width="16" height="16"
+            viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.0467 11.22L12.6667 9.80667C12.3699 9.5245 11.9955 9.33754 11.5916 9.26983C11.1876 9.20211 10.7727 9.25673 10.4001 9.42667L9.80008 8.82667C10.5071 7.88194 10.83 6.70445 10.7038 5.53122C10.5775 4.358 10.0115 3.27615 9.1197 2.50347C8.22787 1.73078 7.07643 1.32464 5.89718 1.36679C4.71794 1.40894 3.59844 1.89626 2.76405 2.73065C1.92967 3.56503 1.44235 4.68453 1.4002 5.86378C1.35805 7.04302 1.76419 8.19446 2.53687 9.08629C3.30956 9.97812 4.3914 10.5441 5.56463 10.6704C6.73786 10.7966 7.91535 10.4737 8.86007 9.76667L9.45341 10.36C9.26347 10.7331 9.1954 11.1564 9.25879 11.5702C9.32218 11.984 9.51383 12.3675 9.80674 12.6667L11.2201 14.08C11.5951 14.4545 12.1034 14.6649 12.6334 14.6649C13.1634 14.6649 13.6717 14.4545 14.0467 14.08C14.2372 13.8937 14.3886 13.6713 14.4919 13.4257C14.5953 13.1802 14.6485 12.9164 14.6485 12.65C14.6485 12.3836 14.5953 12.1198 14.4919 11.8743C14.3886 11.6287 14.2372 11.4063 14.0467 11.22ZM8.39341 8.39333C7.9269 8.85866 7.33294 9.1753 6.68657 9.30323C6.0402 9.43117 5.37041 9.36466 4.76181 9.11212C4.15321 8.85958 3.63312 8.43234 3.26722 7.88436C2.90132 7.33638 2.70603 6.69224 2.70603 6.03333C2.70603 5.37442 2.90132 4.73029 3.26722 4.18231C3.63312 3.63433 4.15321 3.20708 4.76181 2.95454C5.37041 2.702 6.0402 2.6355 6.68657 2.76343C7.33294 2.89137 7.9269 3.208 8.39341 3.67333C8.70383 3.98297 8.95012 4.35081 9.11816 4.75577C9.2862 5.16074 9.3727 5.59488 9.3727 6.03333C9.3727 6.47178 9.2862 6.90592 9.11816 7.31089C8.95012 7.71586 8.70383 8.08369 8.39341 8.39333ZM13.1067 13.1067C13.0448 13.1692 12.971 13.2187 12.8898 13.2526C12.8086 13.2864 12.7214 13.3039 12.6334 13.3039C12.5454 13.3039 12.4583 13.2864 12.377 13.2526C12.2958 13.2187 12.2221 13.1692 12.1601 13.1067L10.7467 11.6933C10.6843 11.6314 10.6347 11.5576 10.6008 11.4764C10.567 11.3951 10.5495 11.308 10.5495 11.22C10.5495 11.132 10.567 11.0449 10.6008 10.9636C10.6347 10.8824 10.6843 10.8086 10.7467 10.7467C10.8087 10.6842 10.8825 10.6346 10.9637 10.6007C11.0449 10.5669 11.1321 10.5495 11.2201 10.5495C11.3081 10.5495 11.3952 10.5669 11.4765 10.6007C11.5577 10.6346 11.6314 10.6842 11.6934 10.7467L13.1067 12.16C13.1692 12.222 13.2188 12.2957 13.2527 12.3769C13.2865 12.4582 13.3039 12.5453 13.3039 12.6333C13.3039 12.7213 13.2865 12.8085 13.2527 12.8897C13.2188 12.971 13.1692 13.0447 13.1067 13.1067Z"
+              fill="#BBC3CF"></path>
+          </svg>
+          <input
+            class="w-full md:w-64 pl-8 pr-4 py-2 text-sm text-coolGray-400 font-medium outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
+            type="text" placeholder="Search">
         </div>
       </div>
     </div>
+    <div class="mb-6 border border-coolGray-100"></div>
+    <div class="overflow-hidden border border-coolGray-100 rounded-md shadow-dashboard">
+      <div class="overflow-x-auto">
+        <table class="w-full" id="iniTabel">
+          <tr class="whitespace-nowrap h-11 bg-coolGray-50 bg-opacity-80 border-b border-coolGray-100">
+            <th class="px-4 font-semibold text-xs text-coolGray-500 uppercase text-left">
+              <div class="flex items-center">
+                <input class="mr-3 w-4 h-4 bg-white rounded" type="checkbox">
+                <p>Judul</p>
+              </div>
+            </th>
+            <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-left">
+              Nama Mahasiswa</th>
+            <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-center">
+              Prodi</th>
+            <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-center">
+              Hasil Revisi</th>
+            <th class="whitespace-nowrap px-4 font-semibold text-xs text-coolGray-500 uppercase text-center">
+              Dosen</th>
+            <th class="whitespace-nowrap font-semibold text-xs text-coolGray-500 uppercase text-center">
+            </th>
+          </tr>
+        
+          <!-- ISI TABEL DARI SINI (BUAT pada FILE tabel.js) -->
+        
+          <!-- ISI TABEL SAMPAI DISINI (BUAT pada FILE tabel.js) -->
+
+        </table>
+      </div>
+    </div>
+  </div>
+</aside>
+
+</html>
