@@ -15,7 +15,7 @@ function isiTableBap(results) {
 function isiRow(value) {
     let content = 
     isiTabel.replace("#JUDUL#", value.judul)
-            .replace("#NAMASISWA#", value.nama_mahasiswa)
+            .replace("#NAMAMAHASISWA#", value.nama_mahasiswa)
             .replace("#PRODI#", value.prodi)
             .replace("#HASILREVISI#", value.hasil_revisi)
             .replace("#DOSEN#", value.dosen)
