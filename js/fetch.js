@@ -15,10 +15,10 @@ function isiTableBap(results) {
 function isiRow(value) {
     let content = 
     isiTabel.replace("#JUDUL#", value.judul)
-            .replace("#NAMAMAHASISWA#", value.Nama_Mahasiswa)
-            .replace("#PRODI#", value.Prodi)
-            .replace("#HASILREVISI#", value.Hasil_revisi)
-            .replace("#DOSEN#", value.Dosen)
+            .replace("#NAMAMAHASISWA#", value.nama_mahasiswa)
+            .replace("#PRODI#", value.prodi)
+            .replace("#HASILREVISI#", value.hasil_revisi)
+            .replace("#DOSEN#", value.dosen)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
         addInner("iniTabel", content);
