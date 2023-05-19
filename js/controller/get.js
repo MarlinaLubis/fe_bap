@@ -1,10 +1,8 @@
-// import { get } from "https://bukulapak.github.io/api/process.js";
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
-import { isiTabel } from "../table.js";
+import { isiTabel } from "../temp/table.js";
 let urlAPI = "https://lubisapp.herokuapp.com/bap";
-get(urlAPI, isiTableBap);
-function isiTableBap(results) {
+export function isiTableBap(results) {
     results.forEach(isiRow);
 }
 function isiRow(value) {
